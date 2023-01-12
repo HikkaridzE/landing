@@ -1,0 +1,734 @@
+body *{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.label {
+    cursor: pointer;
+  }
+  .checkbox{
+    display: none;
+  }
+  .fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+  }
+  .fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+  }
+  .checkbox:checked + .fake::before{
+    opacity: 1;
+  }
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.header
+{
+    background-color: black;
+}
+
+footer{
+    background-color: black;
+    padding-top: 20px;
+}
+.button{
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+}
+
+.phone{
+    color: #E3B873;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;
+}
+
+.logo{
+    color: #E3B873;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.header-nav{
+    display: flex;
+}
+
+.header-nav_items{
+    margin-right: 47px;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.main_image{
+    background-image: url('image/main_image.jpg');
+    background-size: cover;
+    height: 790px;
+    padding-top: 194px;
+    position: relative;
+}
+
+.main_image_final{
+    background-image: url('image/final_img.jpg');
+    background-size: cover;
+    height: 1090px;
+    margin-top: 242px;
+    position: relative;
+}
+
+.main_image-overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.main_image-container{
+    position: relative;
+    z-index: 1;
+}
+
+.title{
+    margin: 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.flex-title{
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+
+.but_2{
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    padding: 19px 23px 20px 22px;
+    width: 207px;
+    height: 51px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.step_2_black{
+    background-color: black;
+    height: 1074px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Completed_projects{
+    margin-top: 176px;
+    width: 442px;
+    color: white;
+}
+
+.flexbox-list{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin-top: 42px;
+    width: 300px; 
+}
+
+.three{
+    margin-top: 34px;
+}
+
+.four{
+    margin-top: 34px;
+}
+
+.theme_nav{
+    display: flex;
+    margin-top: 107px;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.theme_nav_items{
+    margin-right: 60px;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.onlinecontrol_img{
+    display: block;
+    margin: 0 auto;
+}
+
+.step_2_white{
+    background-color: white;
+    height: 429px
+}
+
+.OnlineControl_jpg{
+    display: block;
+    margin: 0 auto;
+    margin-top: -225px;
+    filter: brightness(20%);
+}
+
+.video{
+    position: relative;
+}
+
+.OnlineControlPlay_jpg{
+    position: absolute;
+    top: 39%;
+    left: 45%;
+}
+
+.online_description{
+    color: black; 
+    position: absolute;
+    left: 26.25%;
+    right: 26.32%;
+    width: 681px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+}
+
+.data_entry{
+    display: flex;
+    justify-content: space-between;
+    width: 769px;
+    height: 103px;
+    margin: 0 auto;
+    margin-top: 240px;
+}
+
+input, label {
+    display:block;
+}
+
+.input{
+    width: 231px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.first-checkbox{
+   display: block;
+   margin: 0 auto;
+   margin-left: 572px;;
+}
+
+.label {
+    cursor: pointer;
+}
+.checkbox{
+    display: none;
+}
+.fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+h3{
+    text-align: center;
+}
+
+
+.TYPES_OF_REPAIR{
+    margin-top: 75px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #181818;
+}
+
+.TOR_svg{
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.TOR_div{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 31px;
+    gap: 28px;
+}
+
+.TOR_img{
+    width: 392px;
+    height: 421px;
+}
+
+.TOR_li{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: -148px;
+    width: 335px;
+    height: 295px;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.ul_img{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.TOR_btn{
+    position: relative;
+    font-family: 'Yeseva One';
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding: 17px 21px;
+    width: 240px;
+    height: 54px;
+    text-align: center;
+    margin-left: 28px;
+    margin-top: -56px;
+}
+
+.step_3{
+    margin-top: 133px;
+}
+
+.flex_step3{
+    display: flex;
+    flex-direction: column;
+    background-image: url(image/li_img.png);
+    background-size: cover;
+    width: 719px;
+    height: 598px;
+}
+
+.step3_items{
+    display: flex;
+    align-items: center;
+    margin-left: 249px;
+}
+
+.data_entry_step3{
+    background-color: black;
+    margin-right: 100px;  
+    margin-top: 59px;
+    width: 506px;
+    height: 540px;
+}
+
+.input_step3{
+    color: white;
+    background-color: black;
+    width: 408px;
+    margin: 7px 49px 48px 49px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.second-checkbox{
+    margin-top: 16px;
+    margin-left: 49px;
+ }
+
+ .step3_btn{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 213px;
+    height: 51px;
+    margin: 39px 49px 27px 244px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    color: white;
+}
+
+.pig{
+    display: flex;
+    align-items: center;
+    margin: -38px 133px 142px 950px;
+    width: 440px;
+}
+
+.interior_list{
+    display: flex;
+    gap: 100px;
+}
+
+.interior_items{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: white;
+    list-style: none;
+    margin-left: 99px;
+    padding-inline-start: 0;
+}
+
+.grid_gallery{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.img1{
+    position: relative;
+  top: 135px;
+
+}
+
+.img2{
+    position: relative;
+  bottom: 73px;
+
+}
+
+.img3{
+    position: relative;
+  bottom: 30px;
+
+  max-width: 354px;
+}
+
+.img4{
+    position: relative;
+  bottom: 250px;
+
+  max-width: 354px;
+}
+
+.OUR_CLIENT{
+    margin-top: 75px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #181818;
+}
+
+.clients p{
+    font-family: Nunito;
+    font-size: 18px;
+    line-height: 29px;
+    color: #363636;
+    text-align: center;
+    grid-column: 1/8;
+}
+
+.personas{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 104px;
+    margin-right: 104px;
+}
+
+  
+.personas>div {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+  
+.personsa__name p {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+  
+.persona__story {
+    grid-column: 1/3;
+    padding-top: 10px;
+}
+  
+.persona__story p {
+    font-family: Nunito;
+    font-size: 13px;
+    line-height: 23px;
+    color: #959595;
+    text-align: left;
+}
+
+.persona__task {
+    grid-column: 1/3;
+    background-color: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 293px;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    right: 30px;
+  }
+  
+  .area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-right: 1px solid white;
+    padding: 10px 15px 10px 10px;
+  }
+  
+.duaration {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.question_form{
+    position: relative;
+}
+
+.Question{
+    padding: 20px 150px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 131px;   
+    width: 883px;
+    height: 445.32px;   
+    position: relative;
+}
+
+.name_phone{
+    display: flex;
+}
+
+.Question h4{
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 34px;
+}
+
+.Question label{
+    color: gray; 
+    font-family: 'Nunito Sans';
+    font-size: 13px;
+    line-height: 21px;
+    margin-left: 49px;
+}
+
+.input_question_size{
+    color: white;
+    background-color: black;
+    width: 231px;
+    margin-left: 58px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.input_question{
+    margin-top: 48px;
+    width: 516px;
+}
+
+.question-checkbox{
+   margin-top: 46px;
+   margin-left: 119px;
+ }
+
+ .question-btn{
+    margin-top: 30px;
+    margin-left: 200px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 213px;
+    height: 51px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    color: white;
+}
+
+.main_image_map{
+    background-image: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url("/image/city.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -1120px;
+    width: 100%;
+}
+
+
+.address {
+    margin-top: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    bottom: 200px;
+    padding: 0px 280px;
+  }
+  
+  .address p {
+    text-align: center;
+    font-family: Yeseva_one;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-top: 0px;
+  }
+  
+  .address img {
+    background: #E3B873;
+    border-radius: 50%;
+    border: 5px solid #E3B873;
+  }
+  
+  .address div {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  .mail__insta {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: auto;
+  }
+  
+  .address>.mail__insta img {
+    position: relative;
+    top: 20px;
+  }
+
+  .map {
+    margin: auto;
+    margin-left: 160px;
+  }
+  
+  .map img {
+    position: relative;
+    bottom: 175px;
+    width: 100%;
+    max-width: 925px;
+    height: auto;
+  }
